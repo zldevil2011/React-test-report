@@ -15,8 +15,9 @@ class Index extends Component {
               Index
             </p>
             <ul>
-            	<li><Link to="/app">APP</Link></li>
+                <li><Link to="/app">APP</Link></li>
               	<li><Link to="/game">Game</Link></li>
+                <li><Link to="/todo">Todo</Link></li>
             </ul>
           </div>
         }
