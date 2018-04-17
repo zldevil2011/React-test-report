@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, hashHistory } from 'react-router'
-import registerServiceWorker from './registerServiceWorker';
 import routes from './routes';
 import Index from './routes/components/Index';
 import App from './routes/components/App';

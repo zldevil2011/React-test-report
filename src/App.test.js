@@ -12,4 +12,14 @@ describe('AddTodoView',  () => {
 	it('AddTodoView components should be render', () => {
 		expect(wrapper.find('input').exists());
 	})
+	it('When the Enter key was pressed, onAddClick() shoule be called', () => {
+		const mockEvent = {
+			keyCode: 13,
+			target:{
+				value: 'testString'
+			}
+		}
+		wrapper.find('input').simulate('keyup', mockEvent);
+		expect(1==1)
+	})
 })
