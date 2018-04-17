@@ -1,7 +1,7 @@
-import Index from './components/Index';
-import App from './components/App';
-import Game from './components/Game';
-import Todo from './components/Todo';
+import Index from '../components/Index';
+import App from '../components/App';
+import Game from '../components/Game';
+import Todo from '../components/Todo';
 
 export default [
   {

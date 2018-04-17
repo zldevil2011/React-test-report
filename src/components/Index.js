@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
-import logo from '../../logo.svg';
-import '../../App.css';
+import logo from '../logo.svg';
+import '../App.css';
 
 class Index extends Component {
   render() {
