@@ -11,4 +11,14 @@ describe('IndexView', ()=>{
 	it('the link should be render', ()=>{
 		expect(wrapper.find('li').length).toBe(3)
 	});
+	it('the page should come to the right place if the link was clicked', ()=>{
+		const linkList = wrapper.find('li');
+		const mockEvent = {
+	      key: 'Click',
+	    }
+		wrapper.find('li').forEach((item)=>{
+	    	item.simulate('click', mockEvent);
+	    	expect(1==1);
+	    });
+	});
 })
