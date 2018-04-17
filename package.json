@@ -8,14 +8,16 @@
       "jsx"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      ".*\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      ".*\\.(css|less|scss)$": "identity-obj-proxy",
+      "\\.(svg)$": "identity-obj-proxy"
     },
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
   },
   "dependencies": {
+    "identity-obj-proxy": "^3.0.0",
     "jest-cli": "^23.0.0-alpha.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -23,6 +25,7 @@
     "react-router": "^3.0.2",
     "react-scripts": "^1.1.4",
     "redux": "^3.6.0",
+    "save": "^2.3.2",
     "todomvc-app-css": "^2.1.0"
   },
   "devDependencies": {
