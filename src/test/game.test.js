@@ -38,5 +38,12 @@ describe('GameView', ()=>{
 		});
 		expect(initSquaresNullCnt == initSquares.length);
 	})
-	
+	it('the content of square should be changed if it was clicked', ()=>{
+		const props = {
+		    onClick: jest.fn()
+		}
+		const wrapper = shallow(<Square {...props}/>);
+		wrapper.find('button').simulate('click');
+		expect(props.onClick).toBeCalled();
+	})
 });
