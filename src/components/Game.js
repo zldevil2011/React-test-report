@@ -2,22 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../App.css';
 
-function Square(props) {
+export function Square(props) {
 	return (
 	   <button className="square" onClick={props.onClick}>
 	    {props.value}
-	  </button>
+	   </button>
 	);
 }
 
-class Board extends React.Component {
+export class Board extends React.Component {
   renderSquare(i) {
     return <Square 
     	value={this.props.squares[i]}
     	onClick={() => this.props.onClick(i)} />;
   }
   render() {
-
     return (
       <div>
         <div className="board-row">
@@ -40,7 +39,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+export class Game extends React.Component {
   constructor(props) {
   	super(props);
   	this.state = {

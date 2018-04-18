@@ -4,12 +4,13 @@
 // 链接点击跳转是否正确
 import React from 'react'
 import Index from '../components/Index.js';
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme';
+import { getUrl } from '../utils/index';
 
 describe('IndexView', ()=>{
 	const wrapper = shallow(<Index/>);
 	it('the link should be render', ()=>{
-		expect(wrapper.find('li').length).toBe(3)
+		expect(wrapper.find('li').length).toBe(3);
 	});
 	it('the page should come to the right place if the link was clicked', ()=>{
 		const linkList = wrapper.find('li');
@@ -18,7 +19,6 @@ describe('IndexView', ()=>{
 	    }
 		wrapper.find('li').forEach((item)=>{
 	    	item.simulate('click', mockEvent);
-	    	expect(1==1);
 	    });
 	});
 })
