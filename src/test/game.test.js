@@ -2,15 +2,12 @@
 // 按钮渲染正常
 // board渲染正常
 // board里面的square能够正常显示初始状态的squares
-// 点击square更改square的内容
+// 点击square能够调用父级方法更改内容
+// 
 
 import React from 'react';
 import {Game, Board, Square} from '../components/Game';
 import { shallow, mount } from 'enzyme';
-
-console.log(Game);
-console.log(Board);
-console.log(Square);
 
 describe('GameView', ()=>{
 	it('the button should be rendered', ()=>{
